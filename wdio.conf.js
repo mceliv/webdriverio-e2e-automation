@@ -55,18 +55,19 @@ export const config = {
 
         'goog:chromeOptions': {
             args: [
+                '--headless=new',
+                '--no-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-gpu',
                 '--disable-notifications',
-                '--disable-popup-blocking',
                 '--disable-infobars',
                 '--disable-extensions',
-                '--disable-gpu',
                 '--disable-background-networking',
                 '--disable-component-update',
                 '--disable-default-apps',
                 '--no-first-run',
                 '--no-default-browser-check'
             ],
-
             prefs: {
                 'profile.default_content_setting_values.notifications': 2,
                 'profile.default_content_setting_values.popups': 0
