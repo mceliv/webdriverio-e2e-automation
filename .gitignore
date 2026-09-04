@@ -1,0 +1,44 @@
+# Dependências
+node_modules/
+
+# Relatórios de testes
+allure-results/
+allure-report/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Screenshots e vídeos gerados pelos testes
+screenshots/
+videos/
+
+# Arquivos de ambiente
+.env
+.env.*
+!.env.example
+
+# Cache
+.cache/
+.tmp/
+temp/
+
+# IDE / Editores
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Coverage
+coverage/
+
+# Arquivos de execução
+.wdio/
