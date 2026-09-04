@@ -327,4 +327,19 @@ export const config = {
     */
     // afterAssertion: function(params) {
     // }
+    before: async function () {
+        await browser.cdp('Network', 'enable')
+
+        await browser.cdp('Network', 'setBlockedURLs', {
+            urls: [
+                '*://googleads.g.doubleclick.net/*',
+                '*://pagead2.googlesyndication.com/*',
+                '*://googlesyndication.com/*',
+                '*://googleadservices.com/*',
+                '*://ep1.adtrafficquality.google/*',
+                '*://ep2.adtrafficquality.google/*',
+                '*://www.google.com/recaptcha/*'
+            ]
+        })
+    }
 }
